@@ -18,7 +18,7 @@ function addCard() {
         <div class="cardsNum">${cardsDiv.children.length + 1}</div>
         <input type="checkbox" class="checkboxes"
          name="${cardsDiv.children.length + 1}" id="" />
-        <p>${inputBar.value}</p>
+        <p>${inputBar.value[0].toUpperCase() + inputBar.value.slice(1)}</p>
         <button value="${
           cardsDiv.childElementCount + 1
         }" class="btnDelete">X</button>
